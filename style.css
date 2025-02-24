@@ -1,0 +1,108 @@
+:root {
+  --wesbos: #ffc600; /* Yellow color for highlight */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.imgur.com/er8DtBW.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Keeps the background fixed */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title Styling */
+h2 {
+  display: inline-block;
+  border-bottom: 4px solid var(--wesbos);
+  margin-top: 0;
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  letter-spacing: 2px;
+  text-align: center; /* Center the text */
+  width: 100%; /* Ensure the title takes full width */
+}
+
+/* Button Container Styling */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+/* Button Styling */
+.button {
+  margin: 5px 15px;
+  padding: 10px 20px;
+  border: 1px solid var(--wesbos);
+  border-radius: 3px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative; /* Position for the highlight */
+  transition: background-color 0.3s ease;
+}
+
+/* Active Button Styling */
+.button--is-active {
+  background-color: var(--wesbos); /* Highlight active button */
+}
+
+/* Menu Styling */
+.menu {
+  display: none; /* Hide all menus initially */
+}
+
+.menu--is-visible {
+  display: block; /* Show the menu when visible */
+  margin-top: 20px;
+}
+
+/* Item Styling */
+.item__header {
+  display: flex;
+  align-items: baseline;
+}
+
+.item__title {
+  font-size: 35px;
+  font-family: 'Cookie', cursive;
+  color: var(--wesbos);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.item__dots {
+  flex: 1;
+  border-bottom: 1px dashed #aaa;
+  margin: 0 15px;
+}
+
+.item__price {
+  color: var(--wesbos);
+  font-size: 31px;
+  font-family: Blippo, fantasy;
+}
+
+.item__description {
+  margin-bottom: 40px;
+}
+
